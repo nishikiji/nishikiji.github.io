@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>😋</title>
+    <title>欢迎光临</title>
     <style>
         body {
             font-family: "微软雅黑", Arial, sans-serif;
@@ -37,19 +37,34 @@
     </style>
 </head>
 <body>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
     <div class="container">
-        <h1>欢迎来到 8#503-1 的床铺</h1>
-        <img src="avatar.jpg" alt="床铺图片">
+        <h1>你    有    福    了</h1>
+        <h1>欢迎来到 8#503-1 的床铺😋</h1>
+        <img src="avatar.jpg" alt="大头贴" 
+            oncontextmenu="return false;" 
+            draggable="false" 
+            style="user-drag: none; user-select: none;">
         <p>
             这里是8号楼503-1床铺的介绍页面。<br>
             床铺环境舒适，采光良好，配备基础生活设施。<br>
-            <b>欢迎新同学入住，体验温馨的宿舍生活！</b>
+            欢迎新同学入住，体验温馨的宿舍生活！
         </p>
         <p>
-            <strong>床铺特色：</strong><br>
-            - 独立储物空间<br>
-            - 靠窗位置，空气流通<br>
-            - 静谧环境，适合学习与休息
+            <strong>生平简介：</strong><br>
+            姓名：又师，可爱称为师哥<br>
+            籍贯：四川省达州市，后移居至广东省<br>
+            曾因为将舍友说话内容透露给女生而遭舍友孤立（汉奸这一块）<br>
         </p>
     </div>
 </body>
