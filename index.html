@@ -29,10 +29,29 @@
         }
         img {
             width: 70%;
-            max-width: 320px;
+            max-width: 1000px;
             border-radius: 6px;
-            margin: 24px 0;
+            margin: 24px auto;
             display: block;
+        }
+        figure {
+            margin: 24px 0;
+            text-align: center;
+        }
+        figure img {
+            display: block;
+            margin: 24px auto;
+            width: 100%;
+            max-width: 1000px;
+        }
+        figcaption {
+            color: #888;
+            font-size: 14px;
+            margin-top: 8px;
+            width: 70%;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -59,7 +78,32 @@
             <strong>生平简介：</strong><br>
             姓名：又师，可爱称为师哥<br>
             籍贯：四川省达州市，后移居至广东省<br>
+            生性怪癖，喜欢独来独往<br>
             曾因为将舍友说话内容透露给女生而遭舍友孤立（汉奸这一块）<br>
+        </p>
+        <p>
+            <strong>个人事迹：</strong><br>
+            人体闹钟，总会在早晨咚的一声跳下来吵醒室友<br>
+            喜欢吃火鸡面，经常将寝室熏的全是酱油味<br>
+            极少洗澡，身上的衣服从春天穿到冬天，睡觉也不脱衣服<br>
+            床铺万年不洗，曾经甩床单使寝室出现丁达尔效应且室友全员生病<br>
+        </p>
+        <figure>
+        <img src="1.jpg" alt="大头贴" 
+            oncontextmenu="return false;" 
+            draggable="false" 
+            style="user-drag: none; user-select: none;">
+            <figcaption style="text-align:center; color:#888; font-size:14px;">侧视图</figcaption>
+        </figure>
+        <figure>
+            <img src="2.jpg" alt="大头贴" 
+                oncontextmenu="return false;" 
+                draggable="false" 
+                style="user-drag: none; user-select: none;">
+                 <figcaption style="text-align:center; color:#888; font-size:14px;">俯视图</figcaption>
+        </figure>
+        <p>
+            To be continued...
         </p>
     </div>
 </body>
