@@ -5,98 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欢迎光临</title>
     <style>
-        body {
-            font-family: "微软雅黑", Arial, sans-serif;
-            background: linear-gradient(90deg, #ffd6e0 0%, #aeefff 100%);
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 680px;
-            margin: 48px auto;
-            background: rgba(255,255,255,0.95);
-            border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-            padding: 40px 32px 32px 32px;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 12px;
-            font-size: 2.2em;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-align: center;
-        }
-        p {
-            color: #444;
-            line-height: 2.1;
-            font-size: 1.08em;
-            margin: 18px 0;
-        }
-        img {
-            width: 80%;
-            max-width: 420px;
-            border-radius: 12px;
-            margin: 24px auto 8px auto;
-            display: block;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-            background: #fafaff;
-        }
-        figure {
-            margin: 32px 0 24px 0;
-            text-align: center;
-        }
-        figure img {
-            display: block;
-            margin: 0 auto;
-            width: 80%;
-            max-width: 420px;
-            border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-            background: #fafaff;
-        }
-        figcaption {
-            color: #888;
-            font-size: 15px;
-            margin-top: 10px;
-            width: 80%;
-            max-width: 420px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            letter-spacing: 1px;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #eee;
-            margin: 32px 0 24px 0;
-        }
-        footer {
-            text-align: center;
-            color: #aaa;
-            font-size: 14px;
-            margin-top: 24px;
-            letter-spacing: 1px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        a:hover {
-            color: #e67e9c;
-            text-decoration: underline;
-        }
-        @media (max-width: 800px) {
-            .container {
-                max-width: 98vw;
-                padding: 18px 4vw;
-            }
-            img, figure img, figcaption {
-                width: 98vw;
-                max-width: 98vw;
-            }
-        }
+        /* ...existing code... */
+body {
+    font-family: "微软雅黑", Arial, sans-serif;
+    background: linear-gradient(90deg, #ffd6e0 0%, #aeefff 100%);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 680px;
+    margin: 48px auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    padding: 40px 32px 32px 32px;
+}
+h1 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+p {
+    color: #444;
+    line-height: 2.1;
+    font-size: 1.08em;
+    margin: 18px 0;
+    word-break: break-all;
+}
+img {
+    width: 80%;
+    max-width: 420px;
+    border-radius: 12px;
+    margin: 24px auto 8px auto;
+    display: block;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #fafaff;
+}
+figure {
+    margin: 32px 0 24px 0;
+    text-align: center;
+}
+figure img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #fafaff;
+}
+figcaption {
+    color: #888;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    letter-spacing: 1px;
+}
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 32px 0 24px 0;
+}
+footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 24px;
+    letter-spacing: 1px;
+}
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s;
+    word-break: break-all;
+}
+a:hover {
+    color: #e67e9c;
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 98vw;
+        margin: 12px auto;
+        padding: 18px 4vw;
+        border-radius: 8px;
+    }
+    h1 {
+        font-size: 1.3em;
+        margin-bottom: 8px;
+    }
+    p {
+        font-size: 1em;
+        margin: 12px 0;
+    }
+    img, figure img, figcaption {
+        width: 98vw;
+        max-width: 98vw;
+        border-radius: 8px;
+    }
+    figcaption {
+        font-size: 13px;
+        margin-top: 6px;
+    }
+    footer {
+        font-size: 12px;
+        margin-top: 12px;
+        padding-bottom: 8px;
+    }
+}
+
     </style>
 </head>
 <body>
