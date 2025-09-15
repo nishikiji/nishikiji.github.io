@@ -7,51 +7,95 @@
     <style>
         body {
             font-family: "微软雅黑", Arial, sans-serif;
-            background-color: #f6f8fa;
+            background: linear-gradient(90deg, #ffd6e0 0%, #aeefff 100%);
             margin: 0;
             padding: 0;
         }
         .container {
-            max-width: 600px;
-            margin: 40px auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            padding: 32px;
+            max-width: 680px;
+            margin: 48px auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            padding: 40px 32px 32px 32px;
         }
         h1 {
             color: #2c3e50;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
+            font-size: 2.2em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-align: center;
         }
         p {
-            color: #555;
-            line-height: 1.7;
+            color: #444;
+            line-height: 2.1;
+            font-size: 1.08em;
+            margin: 18px 0;
         }
         img {
-            width: 70%;
-            max-width: 1000px;
-            border-radius: 6px;
-            margin: 24px auto;
+            width: 80%;
+            max-width: 420px;
+            border-radius: 12px;
+            margin: 24px auto 8px auto;
             display: block;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            background: #fafaff;
         }
         figure {
-            margin: 24px 0;
+            margin: 32px 0 24px 0;
             text-align: center;
         }
         figure img {
             display: block;
-            margin: 24px auto;
-            width: 100%;
-            max-width: 1000px;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            background: #fafaff;
         }
         figcaption {
             color: #888;
-            font-size: 14px;
-            margin-top: 8px;
-            width: 70%;
-            max-width: 320px;
+            font-size: 15px;
+            margin-top: 10px;
+            width: 80%;
+            max-width: 420px;
             margin-left: auto;
             margin-right: auto;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 32px 0 24px 0;
+        }
+        footer {
+            text-align: center;
+            color: #aaa;
+            font-size: 14px;
+            margin-top: 24px;
+            letter-spacing: 1px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #e67e9c;
+            text-decoration: underline;
+        }
+        @media (max-width: 800px) {
+            .container {
+                max-width: 98vw;
+                padding: 18px 4vw;
+            }
+            img, figure img, figcaption {
+                width: 98vw;
+                max-width: 98vw;
+            }
         }
     </style>
 </head>
@@ -68,12 +112,15 @@
     </script>
 
     <div class="container">
-        <h1>你    有    福    了</h1>
+        <h1>你&nbsp;&nbsp;有&nbsp;&nbsp;福&nbsp;&nbsp;了</h1>
         <h1>欢迎来到 8#503-1 的床铺😋</h1>
-        <img src="avatar.jpg" alt="大头贴" 
-            oncontextmenu="return false;" 
-            draggable="false" 
-            style="user-drag: none; user-select: none;">
+        <figure>
+            <img src="avatar.jpg" alt="大头贴" 
+                oncontextmenu="return false;" 
+                draggable="false" 
+                style="user-drag: none; user-select: none;">
+            <figcaption>大头贴</figcaption>
+        </figure>
         <p>
             <strong>生平简介：</strong><br>
             姓名：又师，可爱称为师哥。<br>
@@ -86,25 +133,35 @@
             人体闹钟，总会在早晨咚的一声跳下来吵醒室友。<br>
             喜欢吃火鸡面，经常将寝室熏的全是酱油味。<br>
             极少洗澡，身上的衣服从春天穿到冬天，睡觉也不脱衣服，身上的味道及床铺周围堪比生化武器。<br>
-            床铺万年不洗，曾经甩床单使寝室出现丁达尔效应且室友全员生病。<br>
+            被褥万年不洗，曾经甩床单使寝室出现丁达尔效应且室友全员生病。<br>
+            建议此床位的朋友做好<strong>完完全全</strong>的消毒工作（尤其是床铺）。
         </p>
         <figure>
-        <img src="1.jpg" alt="大头贴" 
-            oncontextmenu="return false;" 
-            draggable="false" 
-            style="user-drag: none; user-select: none;">
-            <figcaption style="text-align:center; color:#888; font-size:14px;">侧视图</figcaption>
-        </figure>
-        <figure>
-            <img src="2.jpg" alt="大头贴" 
+            <img src="1.jpg" alt="侧视图" 
                 oncontextmenu="return false;" 
                 draggable="false" 
                 style="user-drag: none; user-select: none;">
-                 <figcaption style="text-align:center; color:#888; font-size:14px;">俯视图</figcaption>
+            <figcaption>侧视图</figcaption>
+        </figure>
+        <figure>
+            <img src="2.jpg" alt="俯视图" 
+                oncontextmenu="return false;" 
+                draggable="false" 
+                style="user-drag: none; user-select: none;">
+            <figcaption>俯视图</figcaption>
         </figure>
         <p>
             To be continued...
         </p>
+        <p style="text-align:center; color:#888; font-size:15px;">
+            本网站不定时更新，欢迎各位向我提问</a>😋，包括但不限于学习和生活<br>
+            联系方式：yo@yokura.eu.org
+        </p>
+        <hr>
+        <footer>
+            © 2025 千束 版权所有 | 最后修改时间：2025年9月15日<br>
+            技术支持：HTML、CSS、JavaScript、GitHub Pages
+        </footer>
     </div>
 </body>
 </html>
